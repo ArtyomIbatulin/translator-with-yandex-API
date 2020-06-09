@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="example.js" defer></script> -->
+    <!-- <script src="XHR.js" defer></script> -->
+    <!-- <script src="promise.js" defer></script> -->
+    <script src="fetch.js" defer></script>
+    <title>Lesson_11</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <textarea
+                class="form-control"
+                id="textarea_left"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <div class="form-group col-md-6">
+              <textarea
+                class="form-control"
+                id="textarea_right"
+                rows="5"
+                placeholder="Перевод"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="select1">Исходный язык</label>
+              <select class="form-control" id="select1">
+                <option value="ru" selected>Русский</option>
+                <option value="en">Английский</option>
+                <option value="es">Испанский</option>
+                <option value="it">Итальянский</option>
+                <option value="fr">Французский</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="select2">Язык перевода</label>
+              <select class="form-control" id="select2">
+                <option value="ru">Русский</option>
+                <option value="en" selected>Английский</option>
+                <option value="es">Испанский</option>
+                <option value="it">Итальянский</option>
+                <option value="fr">Французский</option>
+              </select>
+            </div>
+          </div>
+          <div class="row text-center">
+            <button type="submit" class="btn btn-primary" id="btn">
+              Перевести
+            </button>
+          </div>
+        </form>
+        <div class="row text-right" id="agr">
+          <small
+            >Переведено сервисом «Яндекс.Переводчик» <br />
+            <a href="https://translate.yandex.ru/" target="_blank"
+              >https://translate.yandex.ru/</a
+            >
+          </small>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
